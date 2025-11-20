@@ -1,9 +1,16 @@
+# Opening Message
+
 print("=== Basic Calculator ===")
 print("Please select from the following (1-4): ")
+
+# Display Choices
+
 print("1. Addition")
 print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
+
+# Asking for user input
 
 try:
   choice = int(input("Your Choice: "))
@@ -13,6 +20,8 @@ try:
   else:
       num1 = float(input("First Number: "))
       num2 = float(input("Second Number: "))
+
+# Calculation
 
       if choice == 1:
           print(f"{num1} + {num2} = {num1 + num2}")
@@ -25,6 +34,8 @@ try:
               print("Error: Division by zero is Impossible")
           else:
               print(f"{num1} / {num2} = {num1 / num2}")
+
+# Prevent Error
 
 except ValueError:
     print("Invalid Input. enter numeric values only")
